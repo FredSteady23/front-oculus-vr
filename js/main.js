@@ -15,6 +15,11 @@ function open(evt){
         item.classList.remove('tabs__btn-item--active');
     });
 //  -37-25
+    tabContent.forEach(function(item){
+        item.classList.remove('tabs__content-item--active');
+    })
 
+    tabTarget.classList.add('tabs__btn-item--active');
+    document.querySelectorAll(`#${button}`).classList.add('tabs__content-item--active');
 
 }
